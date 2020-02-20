@@ -1,0 +1,21 @@
+{
+    "bindings": [
+        {
+            "queueName": "TopicIn",
+            "name": "model",
+            "type": "serviceBusTrigger",
+            "direction": "out",
+            "connection": "ServiceBusIn",
+            "accessRights": "Manage"
+        },
+        {
+            "queueName": "topicOut",
+            "name": "out",
+            "type": "serviceBusTrigger",
+            "direction": "out",
+            "connection": "ServiceBusOut",
+            "accessRights": "Manage"
+        }
+    ],
+    "disabled": false
+}
