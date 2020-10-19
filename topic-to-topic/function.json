@@ -6,11 +6,10 @@
             "name": "message",
             "type": "serviceBusTrigger",
             "direction": "in",
-            "connection": "ServiceBusFrom",
-            "accessRights": "Manage"
+            "connection": "ServiceBusFrom"
         },
         {
-            "name": "to",
+            "name": "sendTo",
             "type": "serviceBus",
             "topicName": "to",
             "connection": "ServiceBusTo",
