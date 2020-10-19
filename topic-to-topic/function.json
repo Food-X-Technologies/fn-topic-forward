@@ -1,19 +1,19 @@
 {
     "bindings": [
         {
-            "topicName": "from",
-            "subscriptionName": "All",
-            "name": "message",
             "type": "serviceBusTrigger",
+            "connection": "ServiceBusFrom",
+            "subscriptionName": "All",
+            "topicName": "from",
             "direction": "in",
-            "connection": "ServiceBusFrom"
+            "name": "message"
         },
         {
-            "name": "sendTo",
             "type": "serviceBus",
-            "topicName": "to",
             "connection": "ServiceBusTo",
-            "direction": "out"
+            "topicName": "to",
+            "direction": "out",
+            "name": "sendTo"
         }
     ],
     "disabled": false
